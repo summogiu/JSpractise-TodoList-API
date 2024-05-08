@@ -1,0 +1,55 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, ,minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesomeall.min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    
+    <div class="todoList-frame">
+        <div class="header">
+            <img src="./img/logo.png" alt="">
+            <div class="right">
+                <span>OOO的代辦</span>
+                <a href="#">登出</a>
+            </div> 
+        </div>
+        <div class="enter-box">
+            <input type="text" placeholder="新增代辦事項" class="text">
+            <input type="button" value="+" class="save">
+        </div>
+        
+        
+        <div class="no-content">
+            <p>目前尚無待辦事項</p>
+            <img src="./img/empty 1.png" alt="">
+        </div>
+
+        <div class="list-box">  
+            <ul class="state-type">
+                <li><a href="#" class='all'>全部</a></li>
+                <li><a href="#" class="false">待完成</a></li>
+                <li><a href="#" class="checked">已完成</a></li>
+            </ul>
+
+            <ul class="list">
+            </ul>
+
+            <div class="bottom-box">
+                <p class="finish-num">?個待完成項目</p>
+                <a href="#" class="clear-all">清除已完成項目</a>
+            </div>
+        </div>    
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="js/todoList.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
