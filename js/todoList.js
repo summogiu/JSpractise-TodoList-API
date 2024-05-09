@@ -153,7 +153,7 @@ function deleteTodo(todoID){
             Authorization:localStorage.getItem('token')
         }
     })
-    .then(getTodo())
+    .then(()=>getTodo())
     // .catch(err=> console.log(err.response))
 }
 
@@ -256,6 +256,5 @@ text.addEventListener("keydown", e =>{
         save.click();
     }
 });
-
 
 
